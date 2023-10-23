@@ -1,9 +1,20 @@
-import Image from 'next/image'
+import React from "react";
+import { 
+  Camp, 
+  Features, 
+  GetApp, 
+  Guide, 
+  Hero 
+} from "@/components";
 
 export default function Home() {
   return (
-    <main className="">
-      
-    </main>
+    <>
+      <Hero />
+      <Camp />
+      <Guide />
+      <Features />
+      <GetApp />
+    </>
   );
 };
