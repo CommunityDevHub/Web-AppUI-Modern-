@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureItem = ({ title, icon, description }: FeatureItem) => {
     return (
         <>
-            <li className='flex w-full flex-1 flex-col items-start'>
+            <li className='flex w-full flex-1 flex-col items-start border-[1px] p-6 border-gray-700 rounded-3xl'>
                 <div className='rounded-full p-4 lg:p-7 bg-green-50'>
                     <Image
                         src={icon}
@@ -50,6 +50,33 @@ const Features = () => {
                             height={1000}
                             className='feature-phone'
                         />
+                    </div>
+
+                    <div className='z-20 flex w-full flex-col lg:w-[60%]'>
+                        <div className='relative'>
+                            <Image 
+                                src="/camp.svg"
+                                alt='Camp'
+                                width={50}
+                                height={50}
+                                className='absolute left-[-5px] top-[20px] w-10 lg:w-[50px]'
+                            />
+                            <h2 className='bold-40 lg:bold-64'>
+                                Our features
+                            </h2>
+                        </div>
+                        <ul className='mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-20'>
+                            {FEATURES.map((feature) => (
+                                <>
+                                    <FeatureItem
+                                        key={feature.title}
+                                        title={feature.title}
+                                        icon={feature.icon}
+                                        description={feature.description}
+                                    />
+                                </>
+                            ))}
+                        </ul>
                     </div>
                 </div>
             </section>
