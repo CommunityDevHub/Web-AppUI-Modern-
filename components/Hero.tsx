@@ -81,7 +81,7 @@ const Hero = () => {
                                     height={24} 
                                 />
                             </div>
-                            <p className="bold-20 text-white">Aguas Calientes</p>
+                            <p className="bold-20 text-white">TP Ho Chi Minh</p>
                         </div>
 
                         <div className="flexBetween">
