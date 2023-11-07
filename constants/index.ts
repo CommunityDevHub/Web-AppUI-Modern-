@@ -74,11 +74,11 @@ export const FOOTER_CONTACT_INFO = {
     links: [
         { 
             label: 'Admin Officer', 
-            value: '123-456-7890' 
+            value: '123-555-7896', 
         },
         { 
             label: 'Email Officer', 
-            value: 'hilink@akinthil.com' 
+            value: 'DevAno@gmail.com', 
         },
     ],
 };
