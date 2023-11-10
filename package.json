@@ -13,9 +13,11 @@
     "clsx": "^2.0.0",
     "lucide-react": "^0.292.0",
     "next": "14.0.1",
+    "next-sanity": "^6.0.1",
     "query-string": "^8.1.0",
     "react": "^18",
     "react-dom": "^18",
+    "sanity": "^3.19.2",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7"
   },
