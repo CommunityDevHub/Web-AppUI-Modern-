@@ -4,7 +4,7 @@ import { logo } from "../assets/images";
 const Navbar = () => {
     return (
         <>
-            <header className="header">
+            <header className="header border-[1px] rounded-b-3xl">
                 <NavLink to="/">
                     <img 
                         src={logo} 
@@ -25,7 +25,9 @@ const Navbar = () => {
                         Projects
                     </NavLink>
                     <button className="bg-black text-white px-4 py-1 rounded-lg">
-                        GitHub
+                        <a href="https://github.com/NguyenBao23131" target="_blank">
+                            GitHub
+                        </a>
                     </button>
                 </nav>
             </header>
