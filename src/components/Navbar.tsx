@@ -1,7 +1,35 @@
+import { NavLink } from "react-router-dom";
+import { logo } from "../assets/images";
 
 const Navbar = () => {
     return (
-        <div>Navbar</div>
+        <>
+            <header className="header">
+                <NavLink to="/">
+                    <img 
+                        src={logo} 
+                        alt='logo' 
+                        className='w-18 h-18 object-contain' 
+                    />
+                </NavLink>
+                <nav className="flex items-center text-lg gap-7 font-medium">
+                    <NavLink 
+                        to='/about' className={({ isActive }) => isActive ? "text-blue-600 underline" : "text-black" }
+                    >
+                        About
+                    </NavLink>
+                    <NavLink 
+                        to='/projects' 
+                        className={({ isActive }) => isActive ? "text-blue-600 underline" : "text-black"}
+                    >
+                        Projects
+                    </NavLink>
+                    <button className="bg-black text-white px-4 py-1 rounded-lg">
+                        GitHub
+                    </button>
+                </nav>
+            </header>
+        </>
     );
 };
 
