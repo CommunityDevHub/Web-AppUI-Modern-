@@ -49,6 +49,17 @@ const About = () => {
                         ))}
                     </div>
                 </div>
+
+                <div className="py-16 mt-5 border-t-[1px]">
+                    <div className="subhead-text">
+                        Work Experiences
+                    </div>
+                    <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+                        <p>
+                            Build some mini projects, leveling up my skills everyday and do paper research about Detection Object
+                        </p>
+                    </div>
+                </div>
             </section>
         </>
     );
