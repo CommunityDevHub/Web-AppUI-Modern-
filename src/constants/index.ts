@@ -24,7 +24,12 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    flutter,
+    python,
+    pytorch,
+    tensorflow,
+    figma,
 } from "../assets/icons";
 
 export const skills = [
@@ -107,7 +112,32 @@ export const skills = [
         imageUrl: typescript,
         name: "TypeScript",
         type: "Frontend",
-    }
+    },
+    {
+        imageUrl: flutter,
+        name: "Flutter",
+        type: "Mobile App",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Machine learning",
+    },
+    {
+        imageUrl: pytorch,
+        name: "Pytorch",
+        type: "Machine learning",
+    },
+    {
+        imageUrl: tensorflow,
+        name: "Tensorflow",
+        type: "Machine learning",
+    },
+    {
+        imageUrl: figma,
+        name: "Figma",
+        type: "Design Product",
+    },
 ];
 
 export const experiences = [

@@ -26,6 +26,11 @@ import arrow from './arrow.svg';
 import contact from './contact.svg';
 import soundon from './soundon.png';
 import soundoff from './soundoff.png';
+import flutter from './flutter.svg';
+import python from './python.svg';
+import pytorch from './pytorch.svg';
+import tensorflow from './tensorflow.svg';
+import figma from './figma.svg';
 
 export {
     css,
@@ -46,6 +51,11 @@ export {
     typescript,
     linkedin,
     twitter,
+    flutter,
+    python,
+    pytorch,
+    tensorflow,
+    figma,
     car,
     estate,
     pricewise,
