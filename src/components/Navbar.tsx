@@ -12,7 +12,7 @@ const Navbar = () => {
                         className='w-18 h-18 object-contain' 
                     />
                 </NavLink>
-                <nav className="flex items-center text-lg gap-7 font-medium">
+                <nav className="flex items-center text-lg gap-7 font-medium transition-all duration-150 ease-in-out">
                     <NavLink 
                         to='/about' className={({ isActive }) => isActive ? "text-blue-600 underline" : "text-black" }
                     >
