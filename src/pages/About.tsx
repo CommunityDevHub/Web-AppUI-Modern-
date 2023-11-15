@@ -81,6 +81,7 @@ const About = () => {
                                         borderStyle: "solid",
                                         borderBottomColor: experience.iconBg,
                                         boxShadow: "none",
+                                        borderRadius: "25px",
                                     }}
                                 >
                                     <div className="border-2 p-4 rounded-xl">
