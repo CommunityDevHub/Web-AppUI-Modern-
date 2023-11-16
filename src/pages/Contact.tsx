@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 
 import useAlert from "../hooks/useAlert";
 import { Loader, Alert } from "../components";
-
+import { Fox } from "../models";
 const Contact = () => {
 
     const handleSubmit = (e) => {
@@ -87,6 +87,9 @@ const Contact = () => {
                             penumbra={1}
                             intensity={2}
                         />
+                        <Suspense fallback={<Loader />}>
+                            
+                        </Suspense>
                     </Canvas>
                 </div>
             </section>
