@@ -43,7 +43,7 @@ const Project = () => {
                                         {project.description}
                                     </p>
 
-                                    <div className='mt-5 flex items-center gap-2 font-poppins'>
+                                    <div className='mt-5 flex items-center gap-2 font-poppins hover:translate-x-3 transition-all duration-300 ease-in-out'>
                                         <Link
                                             to={project.link}
                                             target='_blank'
@@ -63,6 +63,10 @@ const Project = () => {
                         </>
                     ))}
                 </div>
+
+                <hr className="border-slate-200" />
+
+                <CTA />
             </section>
         </>
     );
