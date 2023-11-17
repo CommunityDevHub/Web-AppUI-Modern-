@@ -7,7 +7,22 @@ import { Loader, Alert } from "../components";
 import { Fox } from "../models";
 const Contact = () => {
 
-    const handleSubmit = (e) => {
+    const formRef = useRef();
+
+    const [form, setForm] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
+
+    const [loading, setLoading] = useState(false);
+    const [currentAnimation, setCurrentAnimation] = useState("idle");
+
+    const handleFocus = () => setCurrentAnimation("walk");
+    const handleBlur = () => setCurrentAnimation("idle");
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const handleSubmit = (e: any) => {
         e.preventDefault();
     };
 
@@ -88,7 +103,12 @@ const Contact = () => {
                             intensity={2}
                         />
                         <Suspense fallback={<Loader />}>
-                            
+                            <Fox
+                                currentAnimation={currentAnimation}
+                                position={[0.5, 0.35, 0]}
+                                rotation={[12.629, -0.6, 0]}
+                                scale={[0.5, 0.5, 0.5]}
+                            />
                         </Suspense>
                     </Canvas>
                 </div>
